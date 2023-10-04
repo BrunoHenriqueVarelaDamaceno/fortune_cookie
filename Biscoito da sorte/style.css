@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+.screen1 {
+  width: 42rem;
+  height: 42.4rem;
+  padding: 4.8rem 6.4rem;
+  background-color: #fff;
+  border-radius: .5rem;
+  margin: auto;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+.screen1 h1{
+  color: #34355B;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 1.6rem;
+}
+
+.screen1 p {
+  font-family: 'DM Sans', sans-serif;
+  color: #34355B;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1.4rem 0 2rem;
+}
+
+.screen1 button {
+width: 24.8rem;
+height: 19.2rem;
+
+background-color: #fff;
+border: none;
+}
+
+.screen1 img:hover {
+  animation: vibration .1s infinite
+}
+
+.screen2 {
+  width: 42.8rem;
+  height: 56.4rem;
+  background: #fff;
+  border-radius: 5px;
+  padding: 48px 64px;
+  gap: 1.6rem;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+.screen2 h2 {
+  color: #34355B;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 1.6rem;
+}
+
+.screen2 p {
+  font-family: 'Dancing Script', cursive;
+  width: 29.3rem;
+  background: #E4EDF1;
+  padding: 1rem;
+  color: #000;
+  font-size: 2.4rem;
+  text-align: center;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+  margin-top: 2.4rem;
+  position: absolute;
+  animation: message 1s linear;
+}
+
+.screen2 img {
+  width: 100%;
+  height: 11.2rem;
+  margin-top: 18rem;
+}
+
+.screen2 button {
+  display: flex;
+  font-family: 'DM Sans', sans-serif;
+  color: #fff;
+  background: #FF9500;;
+  border-radius: .4rem;
+  padding: 1.6rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 18rem;
+  margin: 4rem auto 0;
+}
+
+@keyframes vibration {
+  25% {
+    margin-left: -5px;
+    rotate: 2deg;
+  }
+  50% {
+  margin: 5px 5px 0 0;
+  rotate: -2deg;
+  }
+  75% {
+  margin: 0 5px 5px 0;
+  rotate: 2deg;
+  }
+}
+
+@keyframes message {
+  0% {
+    margin-top: 180px; 
+    scale: 0.1;
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
